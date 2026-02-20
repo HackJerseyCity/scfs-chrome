@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "SCFS Issue Scores",
+  "version": "1.0",
+  "description": "Displays interaction and outcome scores for SeeClickFix issues",
+  "permissions": [],
+  "host_permissions": [
+    "https://scfs-api.hackjc.org/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://seeclickfix.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {}
+}
